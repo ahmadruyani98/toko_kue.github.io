@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toko Kue Ceria</title>
+</head>
+
+<body>
+    <h1>Selamat Datang di Toko Kue Ceria!</h1>
+
+    <h2>Menu Kue</h2>
+    <ul id="daftar-kue">
+        <li>
+            <img src="kue_coklat.jpg" alt="Kue Coklat">
+            <span>Kue Coklat</span>
+            <button onclick="tambahKeKeranjang('Kue Coklat', 25000)">Tambah ke Keranjang - Rp 25.000</button>
+        </li>
+        <li>
+            <img src="kue_vanila.jpg" alt="Kue Vanila">
+            <span>Kue Vanila</span>
+            <button onclick="tambahKeKeranjang('Kue Vanila', 20000)">Tambah ke Keranjang - Rp 20.000</button>
+        </li>
+        <li>
+            <img src="kue_strawberry.jpg" alt="Kue Strawberry">
+            <span>Kue Strawberry</span>
+            <button onclick="tambahKeKeranjang('Kue Strawberry', 30000)">Tambah ke Keranjang - Rp 30.000</button>
+        </li>
+    </ul>
+
+    <h2>Keranjang Belanja</h2>
+    <ul id="keranjang-belanja">
+        <li>Keranjang belanja masih kosong.</li>
+    </ul>
+
+    <p>Total: Rp <span id="total-harga">0</span></p>
+
+    <button onclick="checkout()">Checkout</button>
+<script src="script.js"></script>
+</body>
+</html>
